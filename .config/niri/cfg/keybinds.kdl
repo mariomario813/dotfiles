@@ -146,6 +146,7 @@ binds {
     Mod+M                               { maximize-window-to-edges; }
 
     // ─── Screenshots ───
+    Mod+Shift+4                         hotkey-overlay-title="Area Screenshot" { screenshot; }
     CTRL+Shift+1                        { screenshot; }
     CTRL+Shift+2                        { screenshot-screen; }
     CTRL+Shift+3                        { screenshot-window; }
