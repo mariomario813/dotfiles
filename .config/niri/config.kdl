@@ -1,0 +1,23 @@
+include "./cfg/animation.kdl"
+include "./cfg/autostart.kdl"
+include "./cfg/keybinds.kdl"
+include "./cfg/input.kdl"
+include "./cfg/display.kdl"
+include "./cfg/layout.kdl"
+include "./cfg/rules.kdl"
+include "./cfg/misc.kdl"
+
+
+window-rule {
+    match app-id="^kitty$"
+    
+    // This allows the transparent alpha channel from Kitty to pass through
+    draw-border-with-background false
+
+    // This intercepts Kitty's transparent background pixels and blurs them
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
