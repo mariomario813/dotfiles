@@ -157,6 +157,7 @@ binds {
 
     // ─── Exit / Power ───
     CTRL+ALT+Delete                     { quit; } // Also quits Niri
+    Mod+CTRL+ALT+Delete                 { spawn "systemctl" "poweroff"; } // System shutdown
     Mod+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
     Mod+O                               repeat=false { toggle-overview; }
 }
