@@ -9,7 +9,7 @@ binds {
     Mod+Slash                    { show-hotkey-overlay; }
 
     // ─── Applications ───
-    CTRL+Shift+T                          hotkey-overlay-title="Open Terminal: kitty" { spawn "kitty"; }
+    Mod+Shift+T                          hotkey-overlay-title="Open Terminal: kitty" { spawn "kitty"; }
     Mod+B                               hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
 
     // --- Noctalia ---
