@@ -21,7 +21,7 @@ input {
         // uncomment the line below.
         //accel-profile "flat"
         // Slightly slower than default (0.0). Scale is -1.0..1.0.
-        accel-speed -0.07
+        accel-speed -0.20
     }
 
     focus-follows-mouse // Automatically focus windows under the mouse pointer
