@@ -10,6 +10,16 @@
         }
     }
 
+    // Zed uses a translucent theme, but niri draws the focus ring as a
+    // solid color rectangle *behind* the focused window by default. That
+    // fill shows through Zed's transparency and makes it look opaque.
+    // Draw the ring around the window instead of filling behind it.
+    window-rule {
+        match app-id=r#"^dev\.zed\.Zed"#
+
+        draw-border-with-background false
+    }
+
     // Floating Noctalia settings window.
     window-rule {
         match app-id="dev.noctalia.Noctalia"
