@@ -162,7 +162,7 @@ binds {
     CTRL+ALT+Delete                     { quit; } // Also quits Niri
     Mod+CTRL+ALT+Delete                 { spawn "systemctl" "poweroff"; } // System shutdown
     Mod+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
-    Mod+Alt_L                           hotkey-overlay-title="Open Overview: Mod+Alt" { toggle-overview; }
-    Mod+Alt_R                           { toggle-overview; }
+    Mod+Alt+Alt_L                       hotkey-overlay-title="Open Overview: Mod+Alt" { toggle-overview; }
+    Mod+Alt+Alt_R                       { toggle-overview; }
     Mod+O                               repeat=false { toggle-overview; }
 }
