@@ -24,8 +24,9 @@ binds {
     // Please set the text editor of your choice.
     // Mod+Shift+E                               hotkey-overlay-title="Open Text Editor: Zed" { spawn "zed"; }
 
-    // Please choose your own file manager.
-    Mod+E                               hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
+    // File managers: Yazi (terminal) and Nautilus (GUI).
+    Mod+E                               hotkey-overlay-title="File Manager: Yazi" { spawn "kitty" "yazi"; }
+    Mod+Shift+E                         hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
 
     // ─── Media Controls ───
     XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
