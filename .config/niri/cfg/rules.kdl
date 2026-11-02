@@ -28,6 +28,13 @@
         default-window-height { fixed 920; }
     }
 
+    // Glance timer: float in the top-right corner.
+    window-rule {
+        match app-id=r#"^io\.github\.mariocesar\.Glance$"#
+        open-floating true
+        default-floating-position x=16 y=16 relative-to="top-right"
+    }
+
     // if you use steam you will probably like these
     window-rule {
         match app-id="steam"
